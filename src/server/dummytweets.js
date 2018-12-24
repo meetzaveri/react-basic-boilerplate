@@ -3,14 +3,14 @@ const tweets = [
     tweet_id: "204",
     tweet_body: " Hola Espanyol",
     user_id: "100",
-    user_name: "Neil",
+    user_name: "neil",
     timestamp: "2018-12-23T04:03:40+05:30"
   },
   {
     tweet_id: "201",
     tweet_body: "Merry Christmas",
     user_id: "100",
-    user_name: "Neil",
+    user_name: "neil",
     timestamp: "2018-12-23T07:03:40+05:30"
   },
 
@@ -18,7 +18,7 @@ const tweets = [
     tweet_id: "202",
     tweet_body: "Bonjour Freind",
     user_id: "100",
-    user_name: "Neil",
+    user_name: "neil",
     timestamp: "2018-12-23T04:03:40+05:30"
   },
   {

@@ -2,11 +2,13 @@ import React, { Component, Fragment } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Loadable from "react-loadable";
 import { Provider } from "react-redux";
-import Login from "./containers/Login";
 import Routes from "config/routes";
 import { withAuth as AuthWrapper } from "wrappers/auth";
 import "./App.css";
 import "./styles/login.css";
+import "./styles/dashboard.css";
+import "./styles/user.css";
+import "./styles/scaffolding.css";
 import configureStore from "store/store";
 
 const store = configureStore();
@@ -25,6 +27,11 @@ const RegisterContainerLoader = Loadable({
 
 const DashboardContainer = Loadable({
   loader: () => import("containers/Dashboard"),
+  loading: Loading
+});
+
+const ProfileContainer = Loadable({
+  loader: () => import("containers/Profile"),
   loading: Loading
 });
 
@@ -49,6 +56,11 @@ class App extends Component {
                 exact
                 path={Routes.dashboard}
                 component={AuthWrapper(DashboardContainer)}
+              />
+              <Route
+                exact
+                path={Routes.profile}
+                component={AuthWrapper(ProfileContainer)}
               />
             </Switch>
           </Router>

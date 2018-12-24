@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+
 import Routes from "config/routes";
+import ErrorBoundary from "wrappers/errorBoundary";
 import LoginComponent from "components/login";
 import { login, resetLogin } from "actions/auth";
 
@@ -37,11 +39,13 @@ class Login extends Component {
     const { onSubmitForm } = this;
     const localActions = { onSubmitForm };
     return (
-      <>
-        <div>
-          <LoginComponent localActions={localActions} />
-        </div>
-      </>
+      <ErrorBoundary>
+        <>
+          <div>
+            <LoginComponent localActions={localActions} />
+          </div>
+        </>
+      </ErrorBoundary>
     );
   }
 }

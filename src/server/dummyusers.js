@@ -4,7 +4,7 @@ const users = [
     email: "neil@mailinator.com",
     user_name: "neil",
     password: "admin",
-    user_follows: ["101", "103", "105"],
+    user_follows: ["100", "101", "103", "105"],
     user_followed_by: ["102", "103"],
     user_tweets: [
       {
@@ -36,7 +36,7 @@ const users = [
     user_name: "smith",
     email: "smith@mailinator.com",
     password: "admin",
-    user_follows: ["100", "105", "103", "104"],
+    user_follows: ["100", "101", "105", "103", "104"],
 
     user_followed_by: ["100", "102", "103"],
     user_tweets: [
@@ -60,7 +60,7 @@ const users = [
     user_id: "102",
     user_name: "edchen",
     email: "edchen@mailinator.com",
-    user_follows: ["100", "101", "103", "104"],
+    user_follows: ["100", "102", "101", "103", "104"],
 
     user_followed_by: [],
     user_tweets: []
@@ -71,7 +71,7 @@ const users = [
     user_name: "jared",
     email: "jared@mailinator.com",
     password: "admin",
-    user_follows: ["100", "101"],
+    user_follows: ["100", "103", "101"],
 
     user_followed_by: ["100", "102", "103", "104", "105"],
     user_tweets: [
@@ -113,7 +113,7 @@ const users = [
     user_name: "gilfoyle",
     email: "gilfoyle@mailinator.com",
     password: "admin",
-    user_follows: ["103", "105"],
+    user_follows: ["103", "104", "105"],
 
     user_followed_by: ["101", "102", "103"],
     user_tweets: [
@@ -148,7 +148,7 @@ const users = [
     user_name: "jianyang",
     email: "jianyang@mailinator.com",
     password: "admin",
-    user_follows: ["103"],
+    user_follows: ["103", "105"],
 
     user_followed_by: ["100", "101", "104"],
     user_tweets: [

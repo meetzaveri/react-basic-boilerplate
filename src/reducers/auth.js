@@ -14,6 +14,8 @@ export function auth_login(state = {}, action) {
     case "LOGIN_SUCCESS":
       console.log("responseToBeSend", action.loginResponse);
       localStorage.setItem("token", "ABCDEFGHIJKL1234567890");
+      localStorage.setItem("username", action.loginResponse.user_name);
+      localStorage.setItem("userid", action.loginResponse.user_id);
       state = {
         ...state,
         loginAccess: true,
